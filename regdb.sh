@@ -1,0 +1,14 @@
+python3 main.py \
+--dataset regdb \
+--debug wsl \
+--save-path regdb \
+--arch resnet \
+--trial 1 \
+--stage1-epoch 50 \
+--milestone 50 70 \
+--lr 0.00045 \
+--device 0 \
+--data-path ./datasets/ \
+--batch-pidnum 16 \
+--test-batch 256 \
+--num-workers 4
